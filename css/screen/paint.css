@@ -1,0 +1,40 @@
+.jsCanvas {
+    width: 95%;
+    height: 50%;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+.jsCanvas,
+.controls__range,
+.controls__btn {
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 95%;
+}
+
+.controls__btn {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.jsHide,
+.jsMode {
+    margin: 0px 10px;
+}
+
+.controls__color {
+    display: flex;
+    flex-direction: row;
+}
+
+.controls__color-content {
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0px 5px;
+    cursor: pointer;
+}

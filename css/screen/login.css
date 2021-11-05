@@ -1,0 +1,37 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.login__greeting {
+    font-size: var(--middle-letter);
+}
+
+.logout-form {
+    border: none;
+    font-size: var(--small-letter);
+    color: rgba(177, 177, 177, 0.8);
+    background-color: transparent;
+}
+
+.login-form input {
+    appearance: none;
+    border: none;
+    border-bottom: 2px solid white;
+    outline-style: none;
+    font-size: var(--middle-letter);
+    font-family: inherit;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
+
+.login-form input:focus::placeholder {
+    color: transparent;
+}
+
+.logout-form:hover {
+    text-decoration: underline;
+}

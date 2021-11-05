@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" href="http://example.com/myicon.png">
+    <title>MyDesk</title>
+</head>
+<body>
+    <header class="header">
+        <div class="weather">
+            <span></span>
+        </div>
+        <button class="logout-form hidden">다른 사용자이신가요?</button>
+    </header>
+    <main class="main__container">  
+        <div class="center__container">
+            <div class="clock">
+                <h2 class="clock__screen"></h2>
+                <h3 class="date__screen"></h3>
+            </div>
+            <div class="login">
+                <h1 class="hidden login__greeting"></h1>
+                <form class="login-form hidden">
+                    <input required maxlength="15" type="text" placeholder="What is your name?">
+                </form>
+            </div>
+            <div class="random-quiz">
+                <div class="quiz">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="quiz-google">
+                    <form class="quiz-google__form" name=fsearch method=get action="http://www.google.co.kr/search" target="_blank">
+                        <input class="google-search" autocomplete="off" name=query itemname="검색어" required value="" size="33" placeholder="구글의 도움을 받으세요!">
+                        <i class="fab fa-google"></i>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="to-do__container hidden">
+            <form class="to-do">
+                <input required type="text" placeholder="Write a To Do">
+            </form>
+            <ul class="to-do__list"></ul>
+        </div>  
+        <div class="memo__container hidden">
+            <canvas class="jsCanvas"></canvas>
+            <div class="controls">
+                <div class="controls__range">
+                    <input class="jsRange" type="range" min="0" max="5" value="2.5" steps="0.1">
+                </div>
+                <div class="controls__btn">
+                    <button class="jsMode">Fill</button>
+                    <button class="jsSave">Save</button>
+                    <button class="jsHide">Hide</button>
+                </div>
+                <div class="controls__color">
+                    <div class="controls__color-content jsColor" style="background-color: #2c2c2c;"></div>
+                    <div class="controls__color-content jsColor" style="background-color: rgb(134, 131, 131);"></div>
+                    <div class="controls__color-content jsColor" style="background-color: #FF3B30;"></div>
+                    <div class="controls__color-content jsColor" style="background-color: #ff9500;"></div>
+                    <div class="controls__color-content jsColor" style="background-color: #FFCC00;"></div>
+                    <div class="controls__color-content jsColor" style="background-color: #4CD963;"></div>
+                    <div class="controls__color-content jsColor" style="background-color: #5AC8FA;"></div>
+                    <div class="controls__color-content jsColor" style="background-color: #0579FF;"></div>
+                    <div class="controls__color-content jsColor" style="background-color: #5856D6;"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <nav class="nav">
+        <div class="nav__author">
+            <span><i class="fas fa-layer-group"></i>MyDesk</span>
+            <span>by <a href="https://github.com/oaat9309" target="_blank" title="Github">oaat9309 <i class="fab fa-github"></i></a></span>
+        </div>
+        <div class="nav__icon">
+            <a href="#" title="To-do list"><i class="fas fa-clipboard-list"></i></a>
+            <a href="https://oaat9309.tistory.com/" title="Tistory" target="_blank"><i class="fas fa-blog"></i></a>
+            <a class="modalBtn" href="#" title="Update Note"><i class="fas fa-wrench"></i></a>
+            <a href="#" title="Settings"><i class="fas fa-cog"></i></a>
+        </div>
+    </nav>
+    <div class="modal hidden">
+        <div class="update-modal">
+            <div class="update-modal__title">Update Note</div>
+            <div class="update-modal__close">
+                <button><i class="fas fa-times fa-lg"></i></button>
+            </div>
+            <div class="update-modal__content">
+                <h3>21/10/31</h3>
+                <br>
+                <ul>
+                    <li>to-do list 항목 toggle 전환</li>
+                </ul>
+                <hr>
+                <h3>21/10/18</h3>
+                <br>
+                <ul>
+                    <li>to-do list 항목 style 개선</li>
+                    <li>그림판 기능 추가</li>
+                </ul>
+                <hr>
+                <h3>21/10/10</h3>
+                <br>
+                <ul>
+                    <li>모달창 기능 수정</li>
+                    <li>배경 이미지 list 수정</li>
+                </ul>
+                <hr>
+                <h3>21/10/09</h3>
+                <br>
+                <ul>
+                    <li>업데이트 노트용 모달창 추가</li>
+                    <li>하단 Nav 바 수정</li>
+                    <li>quiz 관련 자바스크립트 내용 수정</li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <script src="./js/greetings.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/quiz.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/to-do.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/memo.js"></script>
+    <script src="https://kit.fontawesome.com/1b4129514a.js" crossorigin="anonymous"></script>
+</body>
+</html>

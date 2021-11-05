@@ -1,0 +1,28 @@
+.to-do input {
+    width: 20vw;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: var(--small-letter);
+    margin-bottom: 30px;
+}
+
+.to-do__list {
+    font-size: var(--small-letter);
+    width: 80%;
+}
+
+.to-do__list li {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: underline;
+    line-height: 30px;
+}
+
+.to-do__list button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    margin-left: 10px;
+}

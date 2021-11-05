@@ -1,0 +1,14 @@
+.memo__container,
+.center__container,
+.to-do__container {
+    width: 30vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+}
+
+.memo__container,
+.to-do__container {
+    align-items: center;
+}

@@ -1,0 +1,38 @@
+.random-quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    font-size: var(--small-letter);
+}
+
+.random-quiz span:last-child {
+    margin-left: 20px;
+    opacity: 0.6;
+}
+
+.quiz-google {
+    margin-top: var(--margin-top);
+}
+
+.quiz-google__form {
+    position: relative;
+}
+
+.google-search {
+    font-size: var(--small-letter);
+    padding: 5px 0px 5px 10px;
+    border: none;
+    border-bottom: 2px dashed white;
+    background-color: transparent;
+    outline-style: none;
+    color: white;
+}
+
+.fa-google {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+

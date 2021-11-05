@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import "./reset.css";
+@import "./variables.css";
+
+/* components */
+@import "./components/header.css";
+@import "./components/navigation.css";
+@import "./components/container.css";
+@import "./components/modal.css";
+
+/* screen */
+@import "./screen/clock.css";
+@import "/css/screen/login.css";
+@import "./screen/quiz.css";
+@import "./screen/to-do.css";
+@import "./screen/paint.css";
+
+.hidden {
+    display: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    overflow: auto;
+    padding-bottom: 0px;
+    overflow: hidden;
+}
+
+.main__container {
+    width: 95vw;
+    height: 100vh;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bgImage {
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+}
