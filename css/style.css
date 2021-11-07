@@ -46,3 +46,25 @@ body {
     bottom: 0px;
     top: 0px;
 }
+
+@media screen and (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 10pt;
+    }
+
+    .logout-form {
+        padding-left: 0;
+        font-size: 10pt;
+    }
+
+    .clock__screen {
+        font-size: var(--middle-letter);
+    }
+
+    .date__screen {
+        font-size: 12pt;
+        width: 100%;
+    }
+}

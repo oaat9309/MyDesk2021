@@ -2,7 +2,7 @@
 
 HTML / CSS / JavaScript
 
-- 위치 기반 날씨 정보 수록
+- 위치 기반 날씨 정보 수록 (openWeatehr API)
 - 기본적인 시간 및 날짜, 요일 확인
 - 단순한 형태의 to-do list (toggle 방식)
 - 다양한 종류의 Development & CS quiz 수록(FE 중심)
