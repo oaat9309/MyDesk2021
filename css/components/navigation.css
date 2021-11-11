@@ -24,8 +24,20 @@
     text-decoration: none;
 }
 
+@keyframes githubColor {
+    0% {
+        color: white;
+    }
+    50% {
+        color: rebeccapurple;
+    }
+    0%{
+        color: white;
+    }
+}
+
 .nav__author span:last-child a:hover {
-    text-decoration: underline;
+    animation: githubColor 2s linear infinite;
 }
 
 .nav__icon {
